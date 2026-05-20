@@ -58,3 +58,42 @@ The system is designed in a modular architecture:
 - Sensor data acquisition and simulation
 - Control logic implementation
 - System-level thinking in IoT applications
+
+
+
+
+## 📁 Project Structure
+
+smart-agriculture-monitoring-system/
+│
+├── main.cpp           # Main application entry point
+├── sensors.h          # Sensor interface definitions
+├── sensors.cpp        # Sensor data simulation module
+├── controller.h       # Control logic interface
+├── controller.cpp     # Data processing and decision logic
+
+## ▶️ How to Run
+
+### Compile:
+g++ main.cpp sensors.cpp controller.cpp -o agri_system
+
+### Run:
+./agri_system
+
+## 📊 Example Output
+
+Smart Agriculture Monitoring System
+
+Soil Moisture: 35%
+Temperature: 28 C
+Humidity: 60%
+
+[ACTION] Irrigation ON
+----------------------------
+
+## 🧠 Design Highlights
+
+- Modular architecture separating sensing and control logic
+- Simulation-based design for testing without physical hardware
+- Scalable structure for future integration with real IoT devices
+- Threshold-based decision system for automated control
